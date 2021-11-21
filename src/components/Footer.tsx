@@ -19,7 +19,7 @@ const Footer = () => {
     return (
         <BottomBar>
             <FooterText>
-                Footer
+                © Copyright Hendrix Software 2021
             </FooterText>
         </BottomBar>
     )

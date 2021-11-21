@@ -9,7 +9,7 @@ const SkillCard = ({ skill }: PropTypes) => {
     return (
         <div>
 
-            <h2><FontAwesomeIcon style={{color:skill.color}}size="4x" icon={[skill.iconType, skill.icon]} /> {skill.title}</h2><p>{skill.description}</p>
+            <h2><FontAwesomeIcon style={{color:skill.color}} size="4x" icon={[skill.iconType, skill.icon]} /> {skill.title}</h2><p>{skill.description}</p>
 
         </div>
     )

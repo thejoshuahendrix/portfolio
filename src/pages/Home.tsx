@@ -1,20 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
+import BadgeDisplay from '../components/BadgeDisplay'
+
+const HomeWrapper = styled.div`
+    width: 30%;
+     margin: 20px auto 50px auto;
+`
 
 const Home = () => {
     return (
-        <div>
-            Home Page Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi adipisci eligendi eum sequi exercitationem quibusdam ipsa culpa reiciendis nostrum placeat vel aperiam id molestias sunt, ea rem pariatur omnis sapiente!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur. Neque cumque non, fugiat nesciunt doloribus sapiente! Expedita, omnis exercitationem vero totam facere quisquam consequatur alias vel voluptates, iure magni?
-        </div>
+        <>
+            <HomeWrapper>
+                <h3>Welcome to my portfolio website. I am a fullstack developer currently working freelance. I love Typescript and React as my main stack. </h3>
+
+            </HomeWrapper>
+            <BadgeDisplay />
+        </>
     )
 }
 

@@ -58,7 +58,7 @@ const css: Skill = {
 }
 const php: Skill = {
     title: "PHP",
-    description: "I enjoy working with, and building with PHP",
+    description: "I enjoy working with, and building with PHP.",
     icon: "php",
     iconType: "fab",
     color: "#480c97"
@@ -66,7 +66,7 @@ const php: Skill = {
 }
 const python: Skill = {
     title: "Python",
-    description: "I love Python for algorithms and data science",
+    description: "I love Python for algorithms and data science.",
     icon: "python",
     iconType: "fab",
     color: "#0c5897"
@@ -78,6 +78,7 @@ export const SkillWrapper = styled.div`
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
+    gap: 2rem .05rem;
     padding: 0 10% 0 10%;
 `
 
