@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { Skill } from '../types/skills'
 import SkillCard from './SkillCard'
@@ -7,7 +6,7 @@ import SkillCard from './SkillCard'
 
 const javascript: Skill = {
     title: "Javascript",
-    description: "I work with Javascript and is my jam.",
+    description: "I work with Javascript and it is my jam.",
     icon: "js-square",
     iconType: "fab",
     color: "#b4a90a"

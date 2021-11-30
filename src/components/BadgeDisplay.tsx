@@ -1,8 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 import { Badge } from '../types/badges'
 import BadgeCard from './BadgeCard'
-import { SkillWrapper } from './SkillList'
 
 const webdev: Badge = {
     title: "Web Development",
