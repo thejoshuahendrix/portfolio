@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 
 const Input = styled.input`
@@ -42,18 +43,22 @@ justify-content: center;
 
 
 const Contact = () => {
+    const [text, setText] = useState('');
+    const handleSubmit = () => {
+        setText('Email Sent!')
+    }
     return (
         <FormWrapper>
-            <Form>
+            <Form data-testid="contactForm">
                 <h2>Contact Me!</h2>
                 <label>Name</label>
-                <Input type="text" name="name" />
+                <Input data-testid='nameInput' type="text" name="name" />
                 <label>Email</label>
-                <Input type="email" name="email" />
+                <Input data-testid='emailInput' type="email" name="email" />
                 <label>Message</label>
-                <TextArea name="message" />
-                <Button>Submit</Button>
-
+                <TextArea data-testid='messageInput' name="message" />
+                <Button data-testid='submitButton' onClick={handleSubmit}>Submit</Button>
+                <div>{text}</div>
             </Form>
         </FormWrapper>
     )

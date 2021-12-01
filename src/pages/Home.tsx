@@ -3,7 +3,8 @@ import BadgeDisplay from '../components/BadgeDisplay'
 
 const HomeWrapper = styled.div`
     width: 30%;
-     margin: 20px auto 50px auto;
+     margin: 50px auto 50px auto;
+     height: 30vh;
 `
 
 const Home = () => {
@@ -11,7 +12,6 @@ const Home = () => {
         <>
             <HomeWrapper>
                 <h3>Welcome to my portfolio website. I am a fullstack developer currently working freelance. I love Typescript and React as my main stack. </h3>
-
             </HomeWrapper>
             <BadgeDisplay />
         </>

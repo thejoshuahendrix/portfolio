@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -34,14 +35,15 @@ const LinkWrapper = styled.div`
 
 
 const Navbar = () => {
+const [hover, setHover] = useState(false);
     return (
         <TopBar>
             <NavWrapper>
-                <Logo><Link style={{ textDecoration: "none", color: 'white' }} to='/'>HS</Link></Logo>
+                <Logo  ><Link style={{ textDecoration: "none" }} to='/' className={hover? 'red': 'white'} onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>HS</Link></Logo>
                 <LinkWrapper>
                     <Link style={{ textDecoration: "none", color: 'white' }} to='/contact'>Contact</Link>
                     <Link style={{ textDecoration: "none", color: 'white' }} to='/about'>About</Link>
-                    <Link style={{ textDecoration: "none", color: 'white' }} to='/portfolio'>Portfolio</Link>
+                    <Link style={{ textDecoration: "none", color: 'white' }} to='/portfolio'>Works</Link>
                 </LinkWrapper>
             </NavWrapper>
         </TopBar>

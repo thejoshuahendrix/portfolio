@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import hero from '../assets/background.jpg'
+import hero from '../../assets/background1.jpg'
 
 
 const HeroImage = styled.div`
@@ -16,7 +16,7 @@ const HeroText = styled.div`
   z-index: 1;
   text-align: center;
   position: absolute;
-  top: 35%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -27,7 +27,7 @@ const HeroLowerText = styled.div`
   z-index: 1;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -44,12 +44,14 @@ const Hero = () => {
         setTimeout(() => setFadeProp2({
             fade: 'visible'
         }), 2000)
-    }, [fadeProp])
+    }, [])
     return (
-        <HeroImage>
-            <HeroText className={fadeProp.fade} id="hero">Hendrix Software</HeroText>
+      <>
+        <HeroImage data-testid="background" id="background"></HeroImage>
+            <HeroText className={fadeProp.fade} >Hendrix Software</HeroText>
             <HeroLowerText className={fadeProp2.fade} id="hero">The future of the web</HeroLowerText>
-        </HeroImage>
+        
+        </>
     )
 }
 

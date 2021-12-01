@@ -1,4 +1,3 @@
-import React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import {fas} from '@fortawesome/free-solid-svg-icons';
@@ -8,9 +7,9 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
+import Navbar from './components/layout/Navbar';
+import Hero from './components/layout/Hero';
+import Footer from './components/layout/Footer';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -20,8 +19,6 @@ library.add(fab,fas);
 const App = () => {
   return (
     <Router>
-
-
       <Navbar />
       <Hero />
       <Routes>
@@ -30,7 +27,6 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
       <Footer />
     </Router>
 

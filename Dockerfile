@@ -1,18 +1,18 @@
-from node:14-alpine as builder
+FROM node:14-alpine as builder
 
 WORKDIR /app
 
-copy package.json ./
-copy yarn.lock ./
-copy tsconfig.json ./
+COPY package.json ./
+COPY yarn.lock ./
+COPY tsconfig.json ./
 
-run yarn install
+RUN yarn install
 
-copy public ./public
-copy src ./src
+COPY public ./public
+COPY src ./src
 
-run yarn build
+RUN yarn build
 
-from lvkdotsh/dynamic-server
+FROM lvkdotsh/dynamic-server
 
-copy --from=builder /app/build /web
+COPY --from=builder /app/build /web
